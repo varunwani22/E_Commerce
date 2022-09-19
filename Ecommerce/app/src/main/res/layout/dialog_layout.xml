@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Place your order!!"
+            android:textColor="#da0c0c"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext"
+            android:hint="@string/enter_your_name" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext"
+            android:hint="@string/enter_email_address" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext"
+            android:hint="@string/enter_shipping_address" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/select_payment_option"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/cash_on_delivery" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upi" />
+
+            <RadioButton
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/button"
+                android:text="@string/place_order"
+                android:textAllCaps="false"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

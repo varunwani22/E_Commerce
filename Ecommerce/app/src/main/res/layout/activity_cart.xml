@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_cancel_back" />
+
+        <ImageView
+            android:id="@+id/empty_cart"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/cardView"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/btnAddToBag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/design_default_color_primary_dark"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="@string/checkout"
+                android:textColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

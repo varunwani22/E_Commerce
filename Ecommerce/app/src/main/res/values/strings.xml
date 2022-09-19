@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">E commerce</string>
+    <string name="semessta">Semessta</string>
+    <string name="product_details">Product Details</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="my_cart">My Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="ok">OK</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_shipping_address">Enter shipping address</string>
+    <string name="select_payment_option">Select payment option</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="upi">UPI</string>
+    <string name="card">Card</string>
+    <string name="place_order">Place Order</string>
+</resources>
